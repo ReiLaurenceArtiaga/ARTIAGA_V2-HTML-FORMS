@@ -195,55 +195,81 @@ body {
 
 .speaker-form-header,
 .speaker-form {
-    background-color: transparent; /* Set background color to transparent */
-    border: none; /* Remove borders */
+    background-color: transparent;
+    border: none;
     width: 80%;
     padding: 50px;
-    margin: 300px auto 40px; /* Center the speaker submission box and add top margin */
+    margin: 300px auto 40px; 
 }
 
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.dropdown-menu {
+.drop-form {
+    position: relative; 
+    width: 95%;
+    height: 40px;
+  }
+  
+  #dropdown-button {
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
+    right: 0; 
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    background-color:#967969;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #dropdown-menu {
     display: none;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-.nav-links ul li:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu ul {
+    position: absolute;
+    top: 100%; 
+    left: 0; 
     list-style: none;
     padding: 0;
+    margin-top: 4px;
+    background-color: #967969;
+    border: 1px solid #7f7f7f;
+  }
+  
+  #dropdown-menu li {
+   padding: 1em 3em;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 4px;
+   
+  }
+  
+  #dropdown-menu li:hover {
+    background-color: #c29d78;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 0; /* Align to the left side */
+    z-index: 999; /* Ensure it appears on top of everything */
+    min-width: 100px;
+    list-style: none;
+    text-wrap: left;
 }
-
-.dropdown-menu ul li {
-    display: block;
-    width: 100%;
-}
-
-.dropdown-menu ul li a {
-    display: block;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu ul li a:hover {
+  
+  .submenu li {
+  font-size: 14px;
+    cursor: pointer;
+    background-color: #967969;
+  }
+  
+  .submenu li:hover {
     background-color: #f0f0f0;
-}
+  }
 
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
