@@ -202,7 +202,48 @@ body {
     margin: 300px auto 40px; /* Center the speaker submission box and add top margin */
 }
 
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.nav-links ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu ul li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #f0f0f0;
+}
 
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
