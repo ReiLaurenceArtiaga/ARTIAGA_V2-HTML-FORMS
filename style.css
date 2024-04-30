@@ -253,9 +253,9 @@ body {
   .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Adjust as needed */
-    left: 0; /* Align to the left side */
-    z-index: 999; /* Ensure it appears on top of everything */
+    top: 100%;
+    left: 0;
+    z-index: 999; 
     min-width: 100px;
     list-style: none;
     text-wrap: left;
@@ -270,6 +270,105 @@ body {
   .submenu li:hover {
     background-color: #f0f0f0;
   }
+
+
+.about-us{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color:black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #967969;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 50px 0px rgba(0,0,0,0.2);
+}
+
+.stores{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #967969;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 43%;
+    opacity: 1;
+}
+
+.Menu{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
 
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
